@@ -15,6 +15,8 @@ Run the following code, which should equal 2.
 
 Try changing the numbers above and running the code again.
 
+This is an RMarkdown file. It allows you to mix code and free text.
+
 ## Install `tidyverse`
 
 Tidyverse is an add-on bundle of software called a "package". It contains useful "functions" for data analysis.
@@ -48,15 +50,17 @@ Check out your Environment pane. You now have a data object to work with! Click 
 When you run the code below, you are creating another object that is a subset of the original data.
 
 ```{r}
-bnia_lib_sub <- bnia_lib %>% filter(CSA2020 %in% c("Canton", "Cherry Hill", "Midway/Coldstream", "Pigtown/Carroll Park"))
+bnia_lib_sub <- bnia_lib |> filter(CSA2020 %in% c("Canton", "Cherry Hill", "Midway/Coldstream", "Pigtown/Carroll Park"))
 ```
+
+> Try changing the neighborhoods on line 53 and running the code again.
 
 ## Reshaping Data
 
 Data in "Long format" is easier for R to work with. Let's convert the data into long format. Here, we are collapsing every column that starts with "libcard" into a single column called "year".
 
 ```{r}
-bnia_lib_long <- bnia_lib_sub %>% pivot_longer(starts_with("libcard"), names_to = "year")
+bnia_lib_long <- bnia_lib_sub |> pivot_longer(starts_with("libcard"), names_to = "year")
 ```
 
 Inspect the data by clicking on the `bnia_lib_long` object. How is it different from `bnia_lib_sub`?
@@ -68,19 +72,19 @@ We want to convert values like "libcard11" to "2011".
 `mutate()` helps create new or updated cleaned columns. Below, we will update "year" by replacing "libcard" with "20".
 
 ```{r}
-bnia_lib_year <- bnia_lib_long %>% mutate(year = str_replace(year, "libcard", "20"))
+bnia_lib_year <- bnia_lib_long |> mutate(year = str_replace(year, "libcard", "20"))
 ```
 
 We also wanat to make sure R knows that the years are numbers, not text ("character" class) data. We can use `as.numeric()` to force this.
 
 ```{r}
-bnia_lib_year <- bnia_lib_year %>% mutate(year = as.numeric(year))
+bnia_lib_year <- bnia_lib_year |> mutate(year = as.numeric(year))
 ```
 
 The "value is the number of people with a library card per 1,000 residents. Let's make that a percentage.
 
 ```{r}
-bnia_lib_pct <- bnia_lib_year %>% mutate(value = (value / 1000) * 100) 
+bnia_lib_pct <- bnia_lib_year |> mutate(value = (value / 1000) * 100) 
 ```
 
 ## Plotting Data
@@ -114,11 +118,7 @@ ggplot(bnia_lib_pct, aes(x = year, y = value, group = CSA2020, color = CSA2020))
 We can get the mean percent of residents with a library card across these neighborhoods per year using `group_by()` and `summarize()`.
 
 ```{r}
-bnia_lib_pct %>% group_by(year) %>% summarize(mean(value))
+bnia_lib_pct |> group_by(year) |> summarize(mean(value))
 ```
 
-## Your turn!
-
-Try changing the neighborhoods on line 51 and running the code again.
-
-Instead of grouping by "year" on line 117, try grouping by Community Statistical Area ("CSA2020").
+> Instead of grouping by "year" on line 121, try grouping by Community Statistical Area ("CSA2020").
