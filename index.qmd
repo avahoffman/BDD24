@@ -38,11 +38,11 @@ We will create an "R Project" to stay organized. You can create many more later.
 - Provide a Directory name, such as "Intro to R".
 - Pick a reasonable location, such as your Documents folder.
 
-## Downdload the Activity
+## Download the Activity
 
 Now we will transition to the activity, which is actually in the code file itself!
 
-- Download [this file](https://raw.githubusercontent.com/avahoffman/BDD24/main/BDD.Rmd).
-- Download [this BNIA data about library cards](https://raw.githubusercontent.com/avahoffman/BDD24/main/Number_of_Persons_with_Library_Cards_per_1%2C000_Residents_-_Community_Statistical_Area.csv).
+- Download <a href="https://raw.githubusercontent.com/avahoffman/BDD24/main/BDD.Rmd" download="BDD.Rmd">This file</a>.
+- Download <a href="https://raw.githubusercontent.com/avahoffman/BDD24/main/Number_of_Persons_with_Library_Cards_per_1%2C000_Residents_-_Community_Statistical_Area.csv" download="Number_of_Persons_with_Library_Cards_per_1,000_Residents_-_Community_Statistical_Area.csv">this BNIA data about library cards</a>.
 - Move the downloaded files to the directory you created above.
 - Open `BDD.Rmd` in RStudio (File > Open File or simply double-click).
