@@ -11,7 +11,7 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This content was created by Dexter Locke and Ava Hoffman for Baltimore Data Day 2024. 📈"
   },
   {
     "objectID": "resources.html",
@@ -81,7 +81,7 @@
     "href": "index.html#navigate-rstudio",
     "title": "Baltimore Data Day 2024",
     "section": "Navigate RStudio",
-    "text": "Navigate RStudio\nLocate the following in RStudio:\n\nConsole. This is where code is run.\nEnvironment. This shows you objects R can work with."
+    "text": "Navigate RStudio\nLocate the following in RStudio:\n\nConsole. This is where code is run.\nEnvironment. This shows you objects R can work with.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRead more about the RStudio user interface here."
   },
   {
     "objectID": "index.html#r-markdown",
@@ -152,5 +152,19 @@
     "title": "Baltimore Data Day 2024",
     "section": "Download the Activity",
     "text": "Download the Activity\nNow we will transition to the activity, which is actually in the code file itself!\n\nDownload This file.\nDownload This BNIA data about library cards. (source)\nMove the downloaded files to the directory you created above.\nOpen BDD.Rmd in RStudio (File &gt; Open File or simply double-click)."
+  },
+  {
+    "objectID": "index.html#intro-to-r-activity",
+    "href": "index.html#intro-to-r-activity",
+    "title": "Baltimore Data Day 2024",
+    "section": "Intro to R Activity",
+    "text": "Intro to R Activity\nNow we will transition to the activities, which are actually in the code files!\n\nDownload This file.\nDownload This BNIA data about library cards. (source)\nMove the downloaded files to the directory you created above.\nOpen BDD.Rmd in RStudio (File &gt; Open File or simply double-click)."
+  },
+  {
+    "objectID": "index.html#tidycensus-activity",
+    "href": "index.html#tidycensus-activity",
+    "title": "Baltimore Data Day 2024",
+    "section": "Tidycensus Activity",
+    "text": "Tidycensus Activity\n\nDownload This file.\nMove the downloaded files to the directory you created above.\nOpen start_using_tidycensus.Rmd in RStudio (File &gt; Open File or simply double-click).\nYou will need a free Census API key, this lets your computer communicate with Census. A key can be obtained from http://api.census.gov/data/key_signup.html."
   }
 ]
