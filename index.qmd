@@ -1,11 +1,48 @@
 ---
-title: "BDD24"
+title: "Baltimore Data Day 2024"
 ---
 
-This is a Quarto website.
+This activity is meant to guide you through some R fundamentals so you can get started on your data journey!
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+## Installing R and RStudio
 
-```{r}
-1 + 1
+You will need to install R. RStudio is a development environment for running R. It comes with a lot of cool features. 
+
+- [Download and Install R](http://cran.us.r-project.org/).
+- [Downlaod and Install RStudio](https://posit.co/download/rstudio-desktop/).
+
+If you work on a Windows machine, you might also need to install [R Tools](https://cran.r-project.org/bin/windows/Rtools/). 
+
+## Navigate RStudio
+
+Locate the following in RStudio:
+
+- **Console**. This is where code is run.
+- **Environment**. This shows you objects R can work with.
+
+```{r, out.width = "60%", echo = FALSE}
+knitr::include_graphics("img/console.png")
 ```
+
+```{r, out.width = "60%", echo = FALSE}
+knitr::include_graphics("img/environment.png")
+```
+
+## Organize your files
+
+We will create an "R Project" to stay organized. You can create many more later.
+
+- Go to File > New Project...
+- Select "New Directory".
+- Select "New Project".
+- Provide a Directory name, such as "Intro to R".
+- Pick a reasonable location, such as your Documents folder.
+
+## Downdload the Activity
+
+Now we will transition to the activity, which is actually in the code file itself!
+
+- Download [this file](https://raw.githubusercontent.com/avahoffman/BDD24/main/index.qmd).
+- Download [this BNIA data about library cards](https://raw.githubusercontent.com/avahoffman/BDD24/main/Number_of_Persons_with_Library_Cards_per_1%2C000_Residents_-_Community_Statistical_Area.csv).
+- Move the downloaded files to the directory you created above.
+- Open `BDD.Rmd` in RStudio (File > Open File or simply double-click).

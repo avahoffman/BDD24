@@ -1,0 +1,41 @@
+---
+title: "BDD Intro to R"
+output: html_document
+---
+
+## Running Code
+
+To run code found here, press the green play button to the right of the code, or use the shortcut ctrl+return (Windows) cmd+return (Mac).
+
+Run the following code, which should equal 2.
+
+```{r}
+1 + 1
+```
+
+Try changing the numbers above and running the code again.
+
+## Install `tidyverse`
+
+Tidyverse is an add-on bundle of software called a "package". It contains useful "functions" for data analysis.
+
+You only need to install tidyverse once per major release of R.
+
+```{r echo=FALSE, message = FALSE}
+install.packages("tidyverse")
+```
+
+But you will need to load it every time you start R.
+
+```{r}
+library(tidyverse)
+```
+
+## Import Data
+
+`read_csv()` is a function that helps you read in 
+
+```{r}
+
+```
+
