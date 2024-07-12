@@ -116,7 +116,6 @@ MD |> plot()
 MD |> mapview()
 ```
 
-
 ## C get Baltimore City Block groups
 
 ```{r}
@@ -179,8 +178,8 @@ mapview(MD, alpha.region = 0, lwd = 2) + # makes polygon hollow, makes outline t
   mapview(BACI, zcol = 'popE') 
 ```
 
+# 2 data transformation
 
-# 2 data tranformation
 ```{r}
 
 # we have been looking at counts, but percentages are likely more useful
@@ -240,6 +239,5 @@ BACI |>
   NULL
 
 ```
-
 
 # end
