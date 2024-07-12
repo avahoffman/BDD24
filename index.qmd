@@ -42,7 +42,7 @@ We will create an "R Project" to stay organized. You can create many more later.
 
 Now we will transition to the activity, which is actually in the code file itself!
 
-- Download [this file](https://raw.githubusercontent.com/avahoffman/BDD24/main/index.qmd).
+- Download [this file](https://raw.githubusercontent.com/avahoffman/BDD24/main/BDD.Rmd).
 - Download [this BNIA data about library cards](https://raw.githubusercontent.com/avahoffman/BDD24/main/Number_of_Persons_with_Library_Cards_per_1%2C000_Residents_-_Community_Statistical_Area.csv).
 - Move the downloaded files to the directory you created above.
 - Open `BDD.Rmd` in RStudio (File > Open File or simply double-click).
