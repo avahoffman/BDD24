@@ -75,13 +75,13 @@ We want to convert values like "libcard11" to "2011".
 bnia_lib_year <- bnia_lib_long |> mutate(year = str_replace(year, "libcard", "20"))
 ```
 
-We also wanat to make sure R knows that the years are numbers, not text ("character" class) data. We can use `as.numeric()` to force this.
+We also want to make sure R knows that the years are numbers, not text ("character" class) data. We can use `as.numeric()` to force this.
 
 ```{r}
 bnia_lib_year <- bnia_lib_year |> mutate(year = as.numeric(year))
 ```
 
-The "value is the number of people with a library card per 1,000 residents. Let's make that a percentage.
+The "value" column is the number of people with a library card per 1,000 residents. Let's make that a percentage.
 
 ```{r}
 bnia_lib_pct <- bnia_lib_year |> mutate(value = (value / 1000) * 100) 
